@@ -1,0 +1,27 @@
+escape 
+
+defscrollback 10240
+select 0
+bind -c REGION s split
+bind -c REGION 1 only
+bind -c REGION c remove
+bind -c REGION j focus down
+bind -c REGION k focus up
+bind -c REGION + resize
+bind w command -c REGION
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+startup_message off
+bind l windowlist -b
+bindkey -k k1 select 1
+bindkey -k k2 select 2
+#bindkey -k k3 select 3
+#bindkey -k k4 select 4
+#bindkey -k k5 select 5
+#bindkey -k k6 select 6
+#bindkey -k k7 select 7
+#bindkey -k k8 select 8
+#bindkey -k k9 select 9
+bindkey -k F2 select 0
+
+screen
+screen
